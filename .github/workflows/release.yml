@@ -87,7 +87,7 @@ jobs:
         with:
           use-cross: ${{ matrix.cross }}
           command: test
-          args: --release --locked --target ${{ matrix.target }} -p biliup
+          args: --release --target ${{ matrix.target }} -p biliup
 
       - name: Build release binary
         uses: actions-rs/cargo@v1
